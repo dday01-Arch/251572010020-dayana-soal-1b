@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  web:
+    build:
+      context: .
+      args:
+        ORG_NAME: "Information System Community (ISC)"
+        ORG_TAGLINE: "Connecting Ideas, Creating Innovation."
+        ORG_MISSION: "Membangun komunitas yang mendukung pengembangan pengetahuan, keterampilan, dan inovasi di bidang Sistem Informasi melalui kolaborasi, pembelajaran, dan penerapan teknologi yang bermanfaat bagi masyarakat."
+        ORG_VISION: "Menjadi komunitas Sistem Informasi yang unggul, inovatif, dan berdaya saing global dalam menciptakan solusi teknologi yang berdampak positif bagi dunia digital."
+        ORG_FOUNDED: "2023"
+        ORG_MEMBERS: "180+"
+        ORG_DIVISION: "5"
+        ORG_EMAIL: "isc.community@gmail.com"
+        ORG_LOCATION: "Bogor, Indonesia"
+
+    image: soal-1b-web
+    container_name: soal-1b
+
+    ports:
+      - "8213:80"
